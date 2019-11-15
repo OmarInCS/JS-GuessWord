@@ -64,7 +64,8 @@ function checkGuess() {
         const letter = selectedWord.charAt(i);
         const letterBox = document
                             .querySelector(`#word > .letter-box:nth-child(${i+1})`)
-        const userLetter = letterBox.value;
+        const userLetter = letterBox.value.toLowerCase();
+        
         answer += userLetter;
         if (letter === userLetter) {
             letterBox.setAttribute("class", "letter-box correct");
