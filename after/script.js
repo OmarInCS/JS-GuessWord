@@ -78,6 +78,10 @@ function checkGuess() {
 
     if (answer === selectedWord) {
         document.getElementsByTagName("img")[0].src = "happy.png";
+        cheerLettersBoxs();
+    }
+    else {
+        teaseLettersBoxs();
     }
 }
 

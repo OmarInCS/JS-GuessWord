@@ -50,6 +50,7 @@ img, h1 {
     border-radius: 8px;
     width: 10px;
     text-align: center;
+    position: relative;
 }
 
 .wrong {
